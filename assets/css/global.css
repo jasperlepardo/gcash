@@ -1,0 +1,150 @@
+body {
+    padding-top: 64px;
+    background-color: #F5F7FC;
+    padding-bottom: 60px;
+  }
+  
+  
+  .card-scrollable {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-destination: 50% 50%;
+    scroll-snap-destination: 50% 50%;
+    /* margin-left: -24px; */
+    /* margin-right: -24px; */
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
+    /* width: 100vw; */
+    padding-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .scrollable {
+      /* flex-wrap: wrap; */
+    }
+  }
+  
+  .card-scrollable .spacer {
+    -webkit-scroll-snap-coordinate: 50% 50%;
+    scroll-snap-coordinate: 50% 50%;
+    scroll-snap-align: center;
+    flex: 0 0;
+    flex-basis: 12px;
+  }
+  
+  .card-scrollable .card {
+    -webkit-scroll-snap-coordinate: 50% 50%;
+    scroll-snap-coordinate: 50% 50%;
+    scroll-snap-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    flex: 0 0;
+    flex-basis: calc(100% - 32px);
+  
+    border: 0;
+  }
+  
+  .card-scrollable .card:first-child {
+    margin-left: 16px;
+  }
+  
+  .card-scrollable .card:last-child {
+    margin-right: 16px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer {
+    background-color: #112244;
+    /* background-color: hsla(0, 0%, 100%, 0.95); */
+    /* border-top: 1px solid #d9d9d9; */
+    padding-bottom: env(safe-area-inset-bottom);
+    -webkit-backdrop-filter: blur(10px);
+    /* box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.15) !important; */
+  }
+  
+  .footer .nav-pills .nav-link {
+    border-radius: 0;
+    color: #ffffff;
+  }
+  
+  .footer .nav-link {
+    /* font-size: 12px; */
+    line-height: 1;
+    padding: 12px;
+    padding-top: 8px;
+  }
+  
+  .footer .nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #007bff;
+  }
+  
+  .footer .nav-text {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .footer .nav-icon {
+    font-size: 32px;
+    line-height: 24px;
+    width: 24px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .card-footer {
+    background-color: transparent;
+    padding: 0;
+    border-top: 0;
+  }
+  
+  .card-footer .btn {
+    border-radius: 0;
+  }
+  
+  .card-footer .col:first-child .btn {
+    border-bottom-left-radius: 4px;
+  }
+  
+  .card-footer .col:last-child .btn {
+    border-bottom-right-radius: 4px;
+  }
+  
+  
+  
+  .list-group-item {
+    line-height: 1;
+  }
+  
+  .list-transaction .list-group-item {
+    background-color: transparent;
+    padding-left: 0;
+    margin-left: 48px;
+  }
+  
+  
+  .list-transaction .list-group-item:first-child {
+    border-top: 0;
+  }
+  
+  .list-transaction .media {
+    margin-left: -48px;
+  }
+  

@@ -2,4 +2,68 @@
 layout: base
 ---
 
-{{ content }}
+
+<nav class="navbar navbar-expand navbar-light fixed-top">
+  <!-- <a class="navbar-brand" href="#">GCash</a> -->
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class=" navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" height="32" width="32">
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<main class="container">
+  {{ content }}
+</main>
+
+
+
+
+
+
+
+<footer class="footer fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-pills nav-justified w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="/send-money/">
+            <i class="uil uil-money-insert"></i>
+            <span class="nav-text">Send</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/request-money/">
+            <i class="uil uil-money-withdraw"></i>
+            <span class="nav-text">Request</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scan-to-pay/">
+            <i class="uil uil-bill"></i>
+            <span class="nav-text">Pay</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/settings">
+            <i class="uil uil-setting"></i>
+            <span class="nav-text">More</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
