@@ -23,47 +23,21 @@ layout: base
   </div>
 </nav>
 
-
-
 <main class="container">
   {{ content }}
 </main>
 
-
-
-
-
-
-
 <footer class="footer fixed-bottom">
   <div class="container">
     <div class="row">
-      <ul class="nav nav-pills nav-justified w-100">
-        <li class="nav-item">
-          <a class="nav-link" href="/send-money/">
-            <i class="uil uil-money-insert"></i>
-            <span class="nav-text">Send</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/request-money/">
-            <i class="uil uil-money-withdraw"></i>
-            <span class="nav-text">Request</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/scan-to-pay/">
-            <i class="uil uil-bill"></i>
-            <span class="nav-text">Pay</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/settings">
-            <i class="uil uil-setting"></i>
-            <span class="nav-text">More</span>
-          </a>
-        </li>
-      </ul>
+      {% include components/molecules/nav-menu.html
+        nav-type="nav-pills"
+        isLarge=""
+        isStacked="flex-column"
+        isJustified="nav-justified"
+        list-value-name=site.data.navigation.global
+        hasIcon="false"
+      %}
     </div>
   </div>
 </footer>
