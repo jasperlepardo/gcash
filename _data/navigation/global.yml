@@ -1,12 +1,12 @@
 - text: Send
   icon: uil uil-money-insert
-  url: /send-money
+  url: send-money
 - text: Recieve
   icon: uil uil-money-withdraw
-  url: /recieve-money
+  url: recieve-money
 - text: Pay
   icon: uil uil-bill
-  url: /scan-to-pay
+  url: scan-to-pay
 - text: More
   icon: uil uil-setting
-  url: /settings
+  url: settings
