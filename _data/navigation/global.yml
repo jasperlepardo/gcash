@@ -1,12 +1,15 @@
-- text: Send
-  icon: uil uil-money-insert
-  url: send-money/
-- text: Request
-  icon: uil uil-money-withdraw
-  url: request-money/
-- text: Pay
-  icon: uil uil-bill
-  url: scan-to-pay/
-- text: More
-  icon: uil uil-setting
-  url: settings/
+- class: "nav-pills nav-justified w-100"
+  type: ""
+  menu:
+  - text: Send
+    icon: uil uil-money-insert
+    url: send-money/
+  - text: Request
+    icon: uil uil-money-withdraw
+    url: request-money/
+  - text: Pay
+    icon: uil uil-bill
+    url: scan-to-pay/
+  - text: More
+    icon: uil uil-setting
+    url: settings/

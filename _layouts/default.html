@@ -3,13 +3,13 @@ layout: base
 ---
 
 
-<nav class="navbar navbar-expand navbar-light fixed-top">
+<header class="navbar navbar-expand navbar-light fixed-top">
   <!-- <a class="navbar-brand" href="#">GCash</a> -->
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button> -->
 
-  <div class=" navbar-collapse" id="navbarSupportedContent">
+  <nav class="navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
@@ -20,24 +20,17 @@ layout: base
         </a>
       </li>
     </ul>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main class="container">
   {{ content }}
 </main>
 
-<footer class="footer fixed-bottom">
+<footer class="fixed-bottom">
   <div class="container">
     <div class="row">
-      {% include components/molecules/nav-menu.html
-        nav-type="nav-pills"
-        isLarge=""
-        isStacked=""
-        isJustified="nav-justified w-100"
-        list-value-name=site.data.navigation.global
-        hasIcon="false"
-      %}
+      {% include components/molecules/nav.html data=site.data.navigation.global %}
     </div>
   </div>
 </footer>
