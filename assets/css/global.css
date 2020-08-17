@@ -1,11 +1,18 @@
 body {
   font-family: 'Open Sans', sans-serif;
 
+  /* padding-top: 64px; */
+  background-color: #F5F7FC;
+  /* background-color: #112244; */
+  /* padding-bottom: 60px; */
+}
+
+main {
   padding-top: 64px;
   background-color: #F5F7FC;
   padding-bottom: 60px;
+  min-height: 100vh;
 }
-
 
 .card-scrollable {
   flex-wrap: nowrap;
@@ -154,3 +161,36 @@ footer .nav-link-icon {
   margin-left: -48px;
 }
 
+
+
+
+
+
+
+
+
+
+/* body {
+  overflow-x: hidden;
+} */
+
+.transition-fade {
+  opacity: 1;
+  transition: 150ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+  /* transition-timing-function: step-end	; */
+  transition-timing-function: ease-in;
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+  transition: 300ms;
+  transition-timing-function: ease-out;
+}

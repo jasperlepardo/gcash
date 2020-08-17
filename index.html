@@ -1,6 +1,31 @@
 ---
 layout: default
+transition: fade
 ---
+
+
+
+<header class="navbar navbar-expand navbar-light fixed-top">
+  <!-- <a class="navbar-brand" href="#">GCash</a> -->
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <nav class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" height="32" width="32">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
 
 <div class="heading">
   <h1 class="heading-title h3">Hi, Jasper!</h1>
@@ -183,3 +208,21 @@ layout: default
     </div>
   </li>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="fixed-bottom">
+  <div class="container">
+    <div class="row">
+      {% include components/molecules/nav.html data=site.data.navigation.global %}
+    </div>
+  </div>
+</footer>
