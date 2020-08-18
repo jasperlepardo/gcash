@@ -4,14 +4,17 @@ layout-type: #container | container-fluid
 custom-stylesheet: 
 ---
 
-{% if site.swup-animation %}
-  <div class="transition-{% if page.transition %}{{page.transition}}{% else %}{{ layout.transition }}{%endif%}" id="swup">
-    <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
-      {{ content }}
-    </main>
-  </div>
-  {% else %}
-  <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
-    {{ content }}
-  </main>
-{% endif %}
+<header class="navbar navbar-expand navbar-dark fixed-top" style="background-color: #112244;">
+  <nav class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a>
+      </li>
+    </ul>
+    <div class="navbar-text">{{ page.title }}</div>
+  </nav>
+</header>
+
+<main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
+  {{ content }}
+</main>
