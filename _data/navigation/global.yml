@@ -1,5 +1,5 @@
 - class: "nav-pills nav-justified w-100"
-  type: ""
+  type: 
   menu:
   - text: Send
     icon: uil uil-money-insert
