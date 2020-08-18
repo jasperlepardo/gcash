@@ -4,21 +4,20 @@ layout: base
 
 {% if site.swup-animation %}
   <div class="transition-{{ page.transition }}" id="swup">
-    <main class="container">
+    <main class="{{ layout.container-type | default: "container"}}{{ page.container-type | default: "container" }}">
       {{ content }}
     </main>
-  </div>
-  <footer class="fixed-bottom">
-    <div class="container">
-      <div class="row">
-        {% include components/molecules/nav.html data=site.data.navigation.global %}
+    <footer class="fixed-bottom">
+      <div class="container">
+        <div class="row">
+          {% include components/molecules/nav.html data=site.data.navigation.global %}
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>  </div>
   {% else %}
-  <div class="container">
+  <main class="{{ layout.container-type | default: "container"}}{{ page.container-type | default: "container" }}">
     {{ content }}
-  </div>
+  </main>
   <footer class="fixed-bottom">
     <div class="container">
       <div class="row">
@@ -27,5 +26,3 @@ layout: base
     </div>
   </footer>
 {% endif %}
-
-
