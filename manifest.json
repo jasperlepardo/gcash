@@ -1,0 +1,10 @@
+{
+    "name": "GCash",
+    "short_name": "GCash",
+    "theme_color": "#112244",
+    "background_color": "#112244",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

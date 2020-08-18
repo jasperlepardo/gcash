@@ -2,4 +2,30 @@
 layout: base
 ---
 
-{{ content }}
+{% if site.swup-animation %}
+  <div class="transition-{{ page.transition }}" id="swup">
+    <main class="container">
+      {{ content }}
+    </main>
+  </div>
+  <footer class="fixed-bottom">
+    <div class="container">
+      <div class="row">
+        {% include components/molecules/nav.html data=site.data.navigation.global %}
+      </div>
+    </div>
+  </footer>
+  {% else %}
+  <div class="container">
+    {{ content }}
+  </div>
+  <footer class="fixed-bottom">
+    <div class="container">
+      <div class="row">
+        {% include components/molecules/nav.html data=site.data.navigation.global %}
+      </div>
+    </div>
+  </footer>
+{% endif %}
+
+
