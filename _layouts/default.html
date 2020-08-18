@@ -1,10 +1,11 @@
 ---
 layout: base
+layout-type:
 ---
 
 {% if site.swup-animation %}
   <div class="transition-{{ page.transition }}" id="swup">
-    <main class="{{ layout.container-type | default: "container"}}{{ page.container-type | default: "container" }}">
+    <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
       {{ content }}
     </main>
     <footer class="fixed-bottom">
@@ -15,7 +16,7 @@ layout: base
       </div>
     </footer>  </div>
   {% else %}
-  <main class="{{ layout.container-type | default: "container"}}{{ page.container-type | default: "container" }}">
+  <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
     {{ content }}
   </main>
   <footer class="fixed-bottom">
