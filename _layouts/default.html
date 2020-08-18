@@ -14,3 +14,11 @@ layout-type: #container | container-fluid
     {{ content }}
   </main>
 {% endif %}
+
+<footer class="fixed-bottom">
+  <div class="container">
+    <div class="row">
+      {% include components/molecules/nav.html data=site.data.navigation.global %}
+    </div>
+  </div>
+</footer>
