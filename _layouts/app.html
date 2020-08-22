@@ -15,6 +15,6 @@ custom-stylesheet:
   </nav>
 </header>
 
-<main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
+<main class="{% if page.layout-type %}{{ page.layout-type }}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}">
   {{ content }}
 </main>

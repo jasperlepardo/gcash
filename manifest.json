@@ -5,6 +5,6 @@
     "background_color": "#112244",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
+    "scope": "www.jsprlprd.com/gcash",
     "start_url": "/"
   }
